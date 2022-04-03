@@ -4,8 +4,7 @@ threads min_threads_count, max_threads_count
 
 worker_timeout 3600 if ENV.fetch("RAILS_ENV", "development") == "development"
 
-# Reactとポート番号の重複を回避するため変更 3000 => 3010
-port ENV.fetch("PORT") { 3010 }
+port ENV.fetch("PORT") { 3000 }
 
 environment ENV.fetch("RAILS_ENV") { "development" }
 
